@@ -8,17 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		81671E0629F0457900F5FB5B /* Movies_Main_ThemeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81671E0529F0457900F5FB5B /* Movies_Main_ThemeApp.swift */; };
-		81671E0829F0457900F5FB5B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81671E0729F0457900F5FB5B /* ContentView.swift */; };
 		81671E0A29F0457C00F5FB5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81671E0929F0457C00F5FB5B /* Assets.xcassets */; };
 		81671E0D29F0457C00F5FB5B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81671E0C29F0457C00F5FB5B /* Preview Assets.xcassets */; };
+		81671E1829F0460100F5FB5B /* MovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81671E1729F0460100F5FB5B /* MovieView.swift */; };
+		81671E1B29F0465900F5FB5B /* Blackbird in Frameworks */ = {isa = PBXBuildFile; productRef = 81671E1A29F0465900F5FB5B /* Blackbird */; };
+		81671E1D29F048A500F5FB5B /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81671E1C29F048A500F5FB5B /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		81671E0229F0457900F5FB5B /* Movies Main Theme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movies Main Theme.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81671E0529F0457900F5FB5B /* Movies_Main_ThemeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies_Main_ThemeApp.swift; sourceTree = "<group>"; };
-		81671E0729F0457900F5FB5B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		81671E0929F0457C00F5FB5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81671E0C29F0457C00F5FB5B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		81671E1729F0460100F5FB5B /* MovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieView.swift; sourceTree = "<group>"; };
+		81671E1C29F048A500F5FB5B /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81671E1B29F0465900F5FB5B /* Blackbird in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +56,10 @@
 			isa = PBXGroup;
 			children = (
 				81671E0529F0457900F5FB5B /* Movies_Main_ThemeApp.swift */,
-				81671E0729F0457900F5FB5B /* ContentView.swift */,
+				81671E1629F045D600F5FB5B /* Views */,
+				81671E1529F045C300F5FB5B /* Services */,
+				81671E1429F045A000F5FB5B /* Helpers */,
+				81671E1329F0459A00F5FB5B /* Model */,
 				81671E0929F0457C00F5FB5B /* Assets.xcassets */,
 				81671E0B29F0457C00F5FB5B /* Preview Content */,
 			);
@@ -65,6 +72,36 @@
 				81671E0C29F0457C00F5FB5B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		81671E1329F0459A00F5FB5B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				81671E1C29F048A500F5FB5B /* Movie.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		81671E1429F045A000F5FB5B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		81671E1529F045C300F5FB5B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		81671E1629F045D600F5FB5B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				81671E1729F0460100F5FB5B /* MovieView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +120,9 @@
 			dependencies = (
 			);
 			name = "Movies Main Theme";
+			packageProductDependencies = (
+				81671E1A29F0465900F5FB5B /* Blackbird */,
+			);
 			productName = "Movies Main Theme";
 			productReference = 81671E0229F0457900F5FB5B /* Movies Main Theme.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +151,9 @@
 				Base,
 			);
 			mainGroup = 81671DF929F0457900F5FB5B;
+			packageReferences = (
+				81671E1929F0465900F5FB5B /* XCRemoteSwiftPackageReference "Blackbird" */,
+			);
 			productRefGroup = 81671E0329F0457900F5FB5B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +180,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81671E0829F0457900F5FB5B /* ContentView.swift in Sources */,
 				81671E0629F0457900F5FB5B /* Movies_Main_ThemeApp.swift in Sources */,
+				81671E1829F0460100F5FB5B /* MovieView.swift in Sources */,
+				81671E1D29F048A500F5FB5B /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +383,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		81671E1929F0465900F5FB5B /* XCRemoteSwiftPackageReference "Blackbird" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marcoarment/Blackbird";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		81671E1A29F0465900F5FB5B /* Blackbird */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81671E1929F0465900F5FB5B /* XCRemoteSwiftPackageReference "Blackbird" */;
+			productName = Blackbird;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 81671DFA29F0457900F5FB5B /* Project object */;
 }
