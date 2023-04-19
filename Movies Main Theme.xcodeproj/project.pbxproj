@@ -13,6 +13,8 @@
 		81671E1829F0460100F5FB5B /* MovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81671E1729F0460100F5FB5B /* MovieView.swift */; };
 		81671E1B29F0465900F5FB5B /* Blackbird in Frameworks */ = {isa = PBXBuildFile; productRef = 81671E1A29F0465900F5FB5B /* Blackbird */; };
 		81671E1D29F048A500F5FB5B /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81671E1C29F048A500F5FB5B /* Movie.swift */; };
+		81671E1F29F04C7B00F5FB5B /* AppDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81671E1E29F04C7B00F5FB5B /* AppDatabase.swift */; };
+		81671E2529F04D9B00F5FB5B /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81671E2429F04D9B00F5FB5B /* SearchResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		81671E0C29F0457C00F5FB5B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		81671E1729F0460100F5FB5B /* MovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieView.swift; sourceTree = "<group>"; };
 		81671E1C29F048A500F5FB5B /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		81671E1E29F04C7B00F5FB5B /* AppDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDatabase.swift; sourceTree = "<group>"; };
+		81671E2429F04D9B00F5FB5B /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				81671E1C29F048A500F5FB5B /* Movie.swift */,
+				81671E2429F04D9B00F5FB5B /* SearchResult.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -85,6 +90,7 @@
 		81671E1429F045A000F5FB5B /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				81671E1E29F04C7B00F5FB5B /* AppDatabase.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -182,6 +188,8 @@
 			files = (
 				81671E0629F0457900F5FB5B /* Movies_Main_ThemeApp.swift in Sources */,
 				81671E1829F0460100F5FB5B /* MovieView.swift in Sources */,
+				81671E2529F04D9B00F5FB5B /* SearchResult.swift in Sources */,
+				81671E1F29F04C7B00F5FB5B /* AppDatabase.swift in Sources */,
 				81671E1D29F048A500F5FB5B /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

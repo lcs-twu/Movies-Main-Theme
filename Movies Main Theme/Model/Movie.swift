@@ -7,6 +7,19 @@
 import Blackbird
 import Foundation
 
-struct Movie: Identifiable, Codable, BlackbirdModel{
-    @BlackbirdColumn var title: String
+struct Movie: Codable{
+    
+    let title: String
+    let year: String
+    let released: String
+    let runtime: String
+    let director: String
+    let language: String
+    let country: String
+    let awards: String
+    let poster: String
+    let imdbRating: String
+    let imdbVotes: String
+    let imdbID: Int
+    
 }
