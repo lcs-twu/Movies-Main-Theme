@@ -9,6 +9,7 @@ import Foundation
 
 struct Movie: Codable{
     
+    let imdbID: String
     let title: String
     let year: String
     let released: String
@@ -18,8 +19,7 @@ struct Movie: Codable{
     let country: String
     let awards: String
     let poster: String
-    let imdbRating: String
-    let imdbVotes: String
-    let imdbID: Int
+    let imdbRating: Double
+    let imdbVotes: Int
     
 }
