@@ -12,7 +12,7 @@ struct SearchView: View {
     @State var foundMovies: [Movie] = []
     
     var body: some View {
-        List(foundMovies, id: \.Int(imdbID)){ currentMovie in
+        List(foundMovies, id: imdbID){ currentMovie in
             
             HStack{
                 Image(currentMovie.poster)
@@ -36,7 +36,7 @@ struct SearchView: View {
             }
         }
         .task {
-            foundMovies = await NetworkService.fetch()
+            foundMovies = await NetworkService.fetch(resultsFor: "Suzume")
         }
     }
 }
