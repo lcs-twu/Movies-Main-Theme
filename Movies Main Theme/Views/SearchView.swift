@@ -12,21 +12,31 @@ struct SearchView: View {
     @State var foundMovies: [Movie] = []
     
     var body: some View {
-        List(foundMovies, id: imdbID){ currentMovie in
+        List(foundMovies, id: \.Int(imdbID)){ currentMovie in
             
             HStack{
                 Image(currentMovie.poster)
-                VStack{
+                VStack(alignment: .leading){
                     Text(currentMovie.title)
                         .bold()
-                    Text(currentMovie.year)
-                    Text(currentMovie.director)
-                    Text(currentMovie.language)
-                    Text(currentMovie.imdbRating)
-                    Text(currentMovie.imdbVotes)
-                    Text(currentMovie.runtime)
+                    HStack{
+                        Text(currentMovie.year)
+                        Text("/")
+                        Text(currentMovie.director)
+                        Text("/")
+                        Text(currentMovie.language)
+                        Text("/")
+                        Text(currentMovie.runtime)
+                    }
+                    HStack{
+                        Text(currentMovie.imdbRating)
+                        Text(currentMovie.imdbVotes)
+                    }
                 }
             }
+        }
+        .task {
+            foundMovies = await NetworkService.fetch()
         }
     }
 }
