@@ -12,7 +12,7 @@ struct SearchView: View {
     @State var foundMovies: [Movie] = []
     
     var body: some View {
-        List(foundMovies, id: imdbID){ currentMovie in
+        List(foundMovies, id: \.imdbID){ currentMovie in
             
             HStack{
                 Image(currentMovie.poster)
@@ -29,8 +29,8 @@ struct SearchView: View {
                         Text(currentMovie.runtime)
                     }
                     HStack{
-                        Text(currentMovie.imdbRating)
-                        Text(currentMovie.imdbVotes)
+                        Text("\(currentMovie.imdbRating)")
+                        Text("\(currentMovie.imdbVotes)")
                     }
                 }
             }
